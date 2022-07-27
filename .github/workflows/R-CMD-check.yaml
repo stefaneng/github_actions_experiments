@@ -23,7 +23,7 @@ jobs:
             any::devtools
             uclahs-cds/private-R-BoutrosLab-statistics-general@9d33f65
           needs: check
-      - uses: r-lib/actions/check-r-package
+      - uses: r-lib/actions/check-r-package@v2
         env:
           _R_CHECK_FORCE_SUGGESTS_: false
         with:
