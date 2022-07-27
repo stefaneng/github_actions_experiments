@@ -21,6 +21,7 @@ jobs:
           extra-packages: |
             any::rcmdcheck
             any::devtools
+            BoutrosLab.statistics.general?ignore
             uclahs-cds/private-R-BoutrosLab-statistics-general@9d33f65
           needs: check
       - uses: r-lib/actions/check-r-package@v2
