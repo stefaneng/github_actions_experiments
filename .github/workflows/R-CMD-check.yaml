@@ -23,6 +23,8 @@ jobs:
             any::devtools
             uclahs-cds/private-R-BoutrosLab-utilities@5dc38fbe5fb
             uclahs-cds/private-R-BoutrosLab-statistics-general@9d33f65a3b
+            BoutrosLab.utilities?ignore
+            BoutrosLab.statistics.general?ignore
           needs: check
       - name: Document roxygen2
         run: devtools::document()
