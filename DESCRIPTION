@@ -11,4 +11,5 @@ Encoding: UTF-8
 LazyData: true
 Imports: 
     BoutrosLab.plotting.general,
-    BoutrosLab.statistics.general
+    BoutrosLab.statistics.general,
+    BoutrosLab.utilities
