@@ -15,5 +15,5 @@ Suggests:
     BoutrosLab.statistics.general,
     BoutrosLab.utilities
 Remotes:
-    uclahs-cds/private-R-BoutrosLab-utilities
+    uclahs-cds/private-R-BoutrosLab-utilities,
     uclahs-cds/private-R-BoutrosLab-statistics-general
