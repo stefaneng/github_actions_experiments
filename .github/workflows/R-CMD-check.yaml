@@ -17,16 +17,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: r-lib/actions/setup-r@v2
-      - name: Install BL
-        run: install.packages('remotes'); remotes::install_github('uclahs-cds/private-R-BoutrosLab-utilities@5dc38fbe5fb'); remotes::install_github('uclahs-cds/private-R-BoutrosLab-statistics-general@9d33f65a3b')
-        shell: Rscript {0}
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
           pak-version: devel
           extra-packages: |
             any::rcmdcheck
             any::devtools
-            uclahs-cds/private-R-BoutrosLab-statistics-general@9d33f65
           needs: check
       - name: Document roxygen2
         run: devtools::document()
